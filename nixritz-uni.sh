@@ -10,13 +10,11 @@ awk -v delay=0.01 'BEGIN {
         char = substr($0, i, 1);  # Extrahiert das aktuelle Zeichen
         if (char ~ /[^ ]/) {  # Prüft, ob das Zeichen kein Leerzeichen ist
             # Definiert die Unicode-Bereiche und wählt zufällig einen Bereich aus
-            ranges[1] = "0x1F600,0x1F64F";  # Emoticons
-            ranges[2] = "0x2600,0x26FF";    # Verschiedene Symbole
-            ranges[3] = "0x1F680,0x1F6FF";  # Transport und Karte
-            ranges[4] = "0x1F300,0x1F5FF";  # Ornamentale Dingbats
-            ranges[5] = "0x1F900,0x1F9FF";  # Menschen und Körper
-            ranges[6] = "0x1F980,0x1F9FF";  # Aktivitäten
-            ranges[7] = "0x1F4F0,0x1F5FF";  # Objekte und Bürobedarf
+            ranges[1] = "0x2600,0x26FF";    # Verschiedene Symbole (z. B. ☀️, ☂️)
+         #   ranges[2] = "0x1F300,0x1F5FF";  # Ornamentale Dingbats (z. B. 🌸, 🎈)
+          #  ranges[3] = "0x1F680,0x1F6FF";  # Transport und Karte (z. B. 🚀, 🚗)
+           # ranges[4] = "0x1F4F0,0x1F4FF";  # Bürobedarf (z. B. 📖, 📷)
+            ranges[2] = "0x1F600,0x1F64F";  # Emoticons (z. B. 😀, 😎)
             
             # Wählt zufällig einen Bereich aus
             selected_range = ranges[int(rand() * length(ranges)) + 1];
