@@ -23,5 +23,5 @@
 ./nixritz.sh   funzt
 
 ### TODO:
-- [] beide Versionen implementierten
-- [x] so anpassen ,dass die Buchstaben weiter fallen, dann aber bei FUCK oder fuck eingeloggt bleiben
+- [ ] beide Versionen implementierten
+- [ ] so anpassen ,dass die Buchstaben weiter fallen, dann aber bei FUCK oder fuck eingeloggt bleiben
