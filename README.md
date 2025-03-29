@@ -1,8 +1,7 @@
 # matrix mit bunten Unicode 
 
 ./nixritz-uni.sh   funzt
- 
- **test mit:**
+ Im Skript können in Zeile 13 bis 17, Bereiche definiert werden, welche die Menge der Zeichen definieren. Nachfolgend die default-Einstellung:
  ```sh
   # Ornamentale Dingbats (0x1F300 - 0x1F5FF)
   for code in {127744..128511}; do printf "\U$(printf '%x' $code) "; done
