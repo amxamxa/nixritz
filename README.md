@@ -1,9 +1,8 @@
 ## matrix mit bunten Zahlen ||Unicode 
 
-./nixritz-uni.sh   funzt
 *Im Skript können in Zeile 13 bis 17, Bereiche definiert werden, welche die Menge der Zeichen definieren. Nachfolgend die default-Einstellung:*
  ```sh
-  # Ornamentale Dingbats (0x1F300 - 0x1F5FF)
+ # Ornamentale Dingbats (0x1F300 - 0x1F5FF)
   for code in {127744..128511}; do printf "\U$(printf '%x' $code) "; done
  
 # Transport und Karte (0x1F680 - 0x1F6FF)
@@ -16,11 +15,11 @@
 
 ### Es stehen 2 Versionen mit unterschiedlichem Zeichensatz zur Verfügung
 
-##### matrix mit bunten Letters
-./nixritz-dev.sh   funzt
+##### HOWTO: matrix mit bunten Letters
+'./nixritz-dev.sh'
 
 #####  matrix mit bunten Zahlen
-./nixritz.sh   funzt
+'./nixritz.sh'
 
 ### TODO:
 - [ ] beide Versionen implementierten
